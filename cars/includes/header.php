@@ -3,7 +3,40 @@ if (!defined('BASE_URL')) {
     header('HTTP/1.0 403 Forbidden');
     exit;
 }
+function render_contact_topbar($contacts) {
+    echo '<div class="topbar" style="flex-direction: column; gap: 5px; display: flex; margin-left: 55%;">';
+    
+    foreach ($contacts as $contact) {
+        $phone = $contact['phone'] ?? '';
+        $email = $contact['email'] ?? '';
+        
+        echo '<ul class="loginbar pull-right">';
+        
+        if ($phone) {
+            echo '<li style="font-size: 9px;">
+                    <i class="fa fa-phone highlight-color"></i>
+                    <a href="tel:' . htmlspecialchars($phone) . '">' . htmlspecialchars($phone) . '</a>
+                  </li>';
+        }
+        
+        if ($phone && $email) {
+            echo '<li class="hidden-xs topbar-devider"></li>';
+        }
+        
+        if ($email) {
+            echo '<li class="hidden-xs" style="font-size: 9px;">
+                    <i class="fa fa-envelope highlight-color"></i>
+                    <a href="mailto:' . htmlspecialchars($email) . '" style="font-size: 9px;">' . htmlspecialchars($email) . '</a>
+                  </li>';
+        }
+        
+        echo '</ul>';
+    }
+    
+    echo '</div>';
+}
 ?>
+
 <body class="dark">
 <div class="wrapper">
   <!--=== Header ===-->
@@ -11,24 +44,27 @@ if (!defined('BASE_URL')) {
     <div class="container">
       <!-- Logo -->
       <a class="logo" href="/">
-        <img src="upload/logo.png" width="275" alt="Ozmo Motorsport Performance Centre" />
+        <img src="upload/logo.png" width="275" alt="<?php echo BUSINESS_NAME; ?>" />
       </a>
       <!-- End Logo -->
 
       <!-- Topbar -->
-      <div class="topbar">
-        <ul class="loginbar pull-right">
-          <li>
-            <i class="fa fa-phone highlight-color"></i>
-            <a href="tel:<?php echo PHONE; ?>"><?php echo PHONE; ?> </a>
-          </li>
-          <li class="hidden-xs topbar-devider"></li>
-          <li class="hidden-xs">
-            <i class="fa fa-envelope highlight-color"></i>
-            <a href="mailto:<?php echo EMAIL; ?>"><?php echo EMAIL; ?></a>
-          </li>
-        </ul>
-      </div>
+       <?php
+render_contact_topbar([
+    [
+        'phone' => PHONE_NUMBER1,
+        'email' => EMAIL_ADDRESS1
+    ],
+    [
+        'phone' => PHONE_NUMBER2,
+        'email' => EMAIL_ADDRESS2
+    ],
+    [
+        'phone' => PHONE_NUMBER3,
+        'email' => EMAIL_ADDRESS3
+    ]
+]);
+?>
       <!-- End Topbar -->
 
       <!-- Toggle get grouped for better mobile display -->
@@ -46,7 +82,7 @@ if (!defined('BASE_URL')) {
         <ul class="nav navbar-nav">
           <li class="active"><a href="/">Home</a></li>
           <li><a href="pricing">Pricing</a></li>
-          <li><a href="about-us">About Us</a></li>
+          <li><a href="<?php echo EXTERNAL_URL; ?>">About Us</a></li>
           <li class="dropdown">
             <a href="services">Services</a>
             <ul class="dropdown-menu">
