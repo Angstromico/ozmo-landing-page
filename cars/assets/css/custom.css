@@ -1,0 +1,296 @@
+/* Add here all your css styles (customizations) */
+@media (max-width: 767px) {
+  .logo {
+    width: 200px !important;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .header .navbar-nav > li > a {
+    padding: 9px 15px 9px 15px;
+  }
+}
+
+.header .dropdown > a:after {
+  right: 0px;
+}
+
+.highlight-color {
+  color: #e9242d !important;
+}
+
+.loginbar {
+  font-size: 16px;
+  white-space: nowrap;
+  padding: 0px;
+}
+
+.imgleft {
+  float: left;
+  margin: 5px 15px 7px 0px;
+}
+
+.imgright {
+  float: right;
+  margin: 5px 0px 7px 15px;
+}
+
+.gotcha {
+  display: none;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+a[href^='tel:'],
+a[href^='tel:']:hover {
+  font-size: inherit !important;
+  text-decoration: none;
+  color: inherit !important;
+  cursor: default;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu {
+  display: block;
+}
+
+.skycontent h2,
+.skycontent h3,
+.skycontent .headline {
+  clear: left;
+}
+
+.skycontent .well {
+  padding-top: 22px;
+  padding-bottom: 1px;
+}
+
+.skycontent .row {
+  clear: both;
+}
+
+.skycontent > ul {
+  clear: left;
+}
+
+.skycontent img {
+  border-radius: 6px !important;
+}
+
+/*Dark Social v2*/
+.dark-social-v2 li {
+  padding-right: 0;
+  margin-bottom: 8px;
+}
+.dark-social-v2 li:first-child {
+  padding-left: 5px;
+}
+.dark-social-v2 li i {
+  color: #777;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  padding: 8px 5px;
+  text-align: center;
+  background: #353535;
+  display: inline-block;
+}
+.dark-social-v2 li i:hover {
+  color: #fff;
+  background: #e9242d;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.coming-soon-page a {
+  color: #fff;
+}
+
+/*404 Error Page v1 
+------------------------------------*/
+.error-v1 {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.error-v1 p {
+  color: #555;
+  font-size: 16px;
+}
+
+.error-v1 span {
+  color: #555;
+  display: block;
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.error-v1 span.error-v1-title {
+  color: #777;
+  font-size: 180px;
+  line-height: 200px;
+  padding-bottom: 20px;
+}
+
+/*For Mobile Devices*/
+@media (max-width: 500px) {
+  .error-v1 p {
+    font-size: 12px;
+  }
+  .error-v1 span {
+    font-size: 25px;
+  }
+  .error-v1 span.error-v1-title {
+    font-size: 140px;
+  }
+}
+
+body.dark .purchase {
+  background: #131313;
+  border-top: 1px solid #2b2b2b;
+}
+body.dark .purchase .btn-buy a {
+  margin-top: 13px;
+}
+
+body.dark .breadcrumbs-v3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+@media (max-width: 767px) {
+  body.dark .breadcrumbs-v3 {
+    background-attachment: scroll;
+  }
+}
+body.dark .breadcrumbs-v3 h1 {
+  color: #fff;
+  font-weight: 500;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+body.dark .news-v3 .post-shares li i {
+  padding: 12px;
+}
+
+body.dark .news-v3 .post-shares li span {
+  border-color: #252525;
+  color: #252525;
+}
+
+.content-sm {
+  padding-bottom: 30px;
+}
+
+/*******************/
+/*ajax error styles*/
+/*******************/
+form.standardajax {
+  position: relative;
+}
+form.standardajax .errorbox {
+  display: none;
+  font-size: 1.5em;
+  background: #e31000;
+  -moz-border-radius: 10px !important;
+  border-radius: 10px !important;
+  position: absolute;
+  color: #ffffff;
+  padding: 20px;
+  width: 240px;
+  text-align: center;
+  top: 40%;
+  margin-top: -50px;
+  margin-left: -120px;
+  left: 50%;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  line-height: 1.5em;
+}
+form.standardajax .sendbox {
+  background: #33455a;
+}
+form.standardajax .sendingbox {
+  width: 70px;
+  margin-left: -35px;
+}
+form.standardajax .alert {
+  /*bootstrap alert fallback */
+  margin: 0px 0px 20px 0px;
+}
+form.standardajax input[disabled],
+form.standardajax textarea[disabled],
+form.standardajax select[disabled] {
+  opacity: 0.4;
+}
+
+/*spinner*/
+.sky-spinner {
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation: rotation 0.7s infinite linear;
+  -moz-animation: rotation 0.7s infinite linear;
+  -o-animation: rotation 0.7s infinite linear;
+  animation: rotation 0.7s infinite linear;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  border-radius: 100% !important;
+}
+.sky-spinner:before {
+  content: '';
+  display: block;
+  position: absolute;
+  /*left:-6px;*/
+  top: -3px;
+  height: 100%;
+  width: 100%;
+  border-top: 3px solid rgba(255, 255, 255, 0.8);
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-radius: 100% !important;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
