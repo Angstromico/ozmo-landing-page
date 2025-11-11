@@ -38,8 +38,11 @@
     define ("MAIL_PASS", "save26$1lightWhales");
     define ("MAIL_TO", "revisions@becreativegroup.co.uk");
 
+//----SPLIT HERE (DO NOT REMOVE THIS LINE)    
+//******************************************************//    
+//SITE SPECIFIC DETAILS - must not be spun by AI but is unique to the individual site rather than common to all sites created by the template - some need to be here because they utilise Site Specific CONSTANTS
+//******************************************************// 
 
-// Configuration constants
 define('SITE_URL', 'https://www.ozmo-motorsport.co.uk');
 define('SITE_TITLE', 'Ozmo Motorsport - The NO1 Remap Tuning Specialists in Dorset & the South of England');
 define('META_DESCRIPTION', 'Ozmo Motorsport - We specialize in ECU remapping, ECU programming and chip tuning for almost any vehicle. We cover Dorset and the South of England. Mobile car remap.');
@@ -50,3 +53,21 @@ define('ADDRESS_LINE2', 'London Road');
 define('ADDRESS_LINE3', 'Dorchester');
 define('ADDRESS_LINE4', 'Dorset');
 define('POSTCODE', 'DT1 1PL');
+
+//******************************************************// 
+//ADDITIONAL CONTENT - Must come after everything else
+//******************************************************//    
+    session_start();
+    if(!isset($_SESSION["token"])){
+        $token = md5(uniqid().rand(1000000, 9999999));
+        $_SESSION["token"] = $token;
+    }
+    
+    // include classes
+    include(dirname(__FILE__) . '/classes/recaptcha.class.php');
+    include(dirname(__FILE__) . '/classes/email.class.php');
+    
+    
+    include (dirname(__FILE__) . '/libraries/phpmailer/src/Exception.php');
+    include (dirname(__FILE__) . '/libraries/phpmailer/src/PHPMailer.php');
+    include (dirname(__FILE__) . '/libraries/phpmailer/src/SMTP.php');
