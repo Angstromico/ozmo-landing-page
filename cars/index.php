@@ -3,6 +3,30 @@ require_once __DIR__ . '/../config-tp15.php';
 include __DIR__ . '/includes/head.php';
 include __DIR__ . '/includes/header.php';
 
+function render_locations($locations) {
+    echo '<h2 style="text-align: center;">Our Locations</h2>';
+    echo '<div class="row margin-bottom-30 animated fadeInDown">';
+    
+    foreach ($locations as $loc) {
+        $icon = $loc['icon'] ?? 'fa-map-marker';
+        $name = $loc['name'] ?? 'Location';
+        $address = $loc['address'] ?? '';
+        $link = $loc['link'] ?? '#';
+        
+        echo '<a class="col-md-4" href="' . htmlspecialchars($link) . '" target="_blank">';
+        echo '  <div class="service">';
+        echo '    <i class="fa ' . htmlspecialchars($icon) . ' service-icon"></i>';
+        echo '    <div class="desc">';
+        echo '      <h4>' . htmlspecialchars($name) . '</h4>';
+        echo '      <p>' . nl2br(htmlspecialchars($address)) . '</p>';
+        echo '    </div>';
+        echo '  </div>';
+        echo '</a>';
+    }
+    
+    echo '</div>';
+}
+
 ?>
 
 <!--=== Slider ===-->
@@ -65,36 +89,29 @@ include __DIR__ . '/includes/header.php';
 
 <!--=== Content Part ===-->
 <div class="container content-sm">
-  <!-- Service Blocks -->
-  <div class="row margin-bottom-30 animated fadeInDown">
-    <div class="col-md-4">
-      <div class="service">
-        <i class="fa fa-tachometer service-icon"></i>
-        <div class="desc">
-          <h4>Fuel Economy Remaps</h4>
-          <p>We'll remap your car to provide better economy, this will save you money and can also increase performance.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service">
-        <i class="fa fa-line-chart service-icon"></i>
-        <div class="desc">
-          <h4>Performance Remaps</h4>
-          <p>If you're after sheer performance we'll remap your vehicle to get the maximum BHP and torque.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service">
-        <i class="fa fa-bolt service-icon"></i>
-        <div class="desc">
-          <h4>Additional Options</h4>
-          <p>We are also able to do EGR removal, speed limit removal and rev limit removal.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Directions Blocks -->
+   <?php
+    render_locations([
+      [
+        'icon'    => 'fa-tachometer',
+        'name'    => LOCATION_NAME1,
+        'address' => "24 Stourbridge Road,\nBromsgrove,\nWorcestershire,\nB61 0AE",
+        'link'    => MAP_LINK1
+      ],
+      [
+        'icon'    => 'fa-line-chart',
+        'name'    => LOCATION_NAME2,
+        'address' => "24 Stourbridge Road,\nBromsgrove,\nWorcestershire,\nB61 0AE",
+        'link'    => MAP_LINK2
+      ],
+      [
+        'icon'    => 'fa-bolt',
+        'name'    => LOCATION_NAME3,
+        'address' => "24 Stourbridge Road,\nBromsgrove,\nWorcestershire,\nB61 0AE",
+        'link'    => MAP_LINK3
+      ]
+  ]);
+  ?>
   <!-- End Service Blokcs -->
 
   <!-- Info Blokcs -->

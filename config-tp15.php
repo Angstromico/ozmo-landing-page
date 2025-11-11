@@ -21,6 +21,14 @@
     define ("EMAIL_ADDRESS2", "studley@jamesgilesandsonsltd.co.uk");
     define ("EMAIL_ADDRESS3", "droitwich@jamesgilesandsonsltd.co.uk");
 
+    define ("MAP_LINK1", "https://www.google.com/maps/place/James+Giles+%26+Sons+Ltd/@52.3389587,-2.0575041,18z/data=!3m1!4b1!4m6!3m5!1s0x4870949d97011df9:0x2092054d8c580ec2!8m2!3d52.3389587!4d-2.0575041!16s%2Fg%2F1vs5w4d7?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D");
+    define ("MAP_LINK2", "https://www.google.com/maps/place/James+Giles+%26+Sons+Ltd/@52.272801,-1.8966862,17z/data=!3m1!4b1!4m6!3m5!1s0x4870c168b8dd49df:0xed956e3a1b961897!8m2!3d52.272801!4d-1.8966862!16s%2Fg%2F11ggtgv5yx?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D");
+    define ("MAP_LINK3", "https://www.google.com/maps/place/James+Giles+%26+Sons+Ltd/@52.267473,-2.1546183,17z/data=!3m1!4b1!4m6!3m5!1s0x4870ed78470d69c7:0x8557c358f72f3753!8m2!3d52.267473!4d-2.1546183!16s%2Fg%2F11tx7y8hj7?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D");
+
+    define ("LOCATION_NAME1", "Bromsgrove");
+    define ("LOCATION_NAME2", "Studley");
+    define ("LOCATION_NAME3", "Droitwich");
+
 
 // Configuration constants
 define('BASE_URL', 'https://www.ozmo-motorsport.co.uk');
