@@ -50,21 +50,21 @@ function render_contact_topbar($contacts) {
 
       <!-- Topbar -->
        <?php
-render_contact_topbar([
-    [
-        'phone' => PHONE_NUMBER1,
-        'email' => EMAIL_ADDRESS1
-    ],
-    [
-        'phone' => PHONE_NUMBER2,
-        'email' => EMAIL_ADDRESS2
-    ],
-    [
-        'phone' => PHONE_NUMBER3,
-        'email' => EMAIL_ADDRESS3
-    ]
-]);
-?>
+        render_contact_topbar([
+          [
+            'phone' => PHONE_NUMBER1,
+            'email' => EMAIL_ADDRESS1
+          ],
+          [
+            'phone' => PHONE_NUMBER2,
+            'email' => EMAIL_ADDRESS2
+          ],
+          [
+            'phone' => PHONE_NUMBER3,
+            'email' => EMAIL_ADDRESS3
+          ]
+        ]);
+      ?>
       <!-- End Topbar -->
 
       <!-- Toggle get grouped for better mobile display -->
