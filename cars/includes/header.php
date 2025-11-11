@@ -1,5 +1,5 @@
 <?php
-if (!defined('BASE_URL')) {
+if (!defined('SITE_URL')) {
     header('HTTP/1.0 403 Forbidden');
     exit;
 }

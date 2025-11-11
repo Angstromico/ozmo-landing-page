@@ -1,5 +1,5 @@
 <?php
-if (!defined('BASE_URL')) {
+if (!defined('SITE_URL')) {
     header('HTTP/1.0 403 Forbidden');
     exit;
 }
@@ -134,11 +134,84 @@ if (!defined('BASE_URL')) {
   gtag('config', 'UA-160777481-1');
 </script>
 
-<!--[if lt IE 9]>
-  <script src="assets/plugins/respond.js"></script>
-  <script src="assets/plugins/html5shiv.js"></script>
-  <script src="assets/plugins/placeholder-IE-fixes.js"></script>
-<![endif]-->
+<script src="https://www.google.com/recaptcha/enterprise.js?render=<?php echo RECAPTCHA_ENTERPRISE_KEY; ?>"></script>
+
+<script>
+        
+        $(document).on('click','#submitForm',function(e){
+
+            e.preventDefault();
+            let formToSubmit = $(this).closest("form");
+
+            let nameField = $(".formNameInput");
+            let emailField = $(".formEmailInput");
+            let numberField = $(".formPhoneInput");
+            let locationField = $(".formSubjectInput");
+            let enquiryField = $(".formMessageInput");
+            let completeField = $(".completeField");
+            let errors = [];
+
+            if ($(nameField).val() === "") {
+                errors.push("nameField");
+                $(nameField).addClass('isError');
+            }else {
+                $(nameField).removeClass('isError');
+            }
+            
+            if ($(emailField).val() === "") {
+                errors.push("emailField");
+                $(emailField).addClass('isError');
+            }else {
+                $(emailField).removeClass('isError');
+            }
+            
+            if ($(numberField).val() === "") {
+                errors.push("numberField");
+                $(numberField).addClass('isError');
+            }else {
+                $(numberField).removeClass('isError');
+            }
+            
+            if ($(locationField).val() === "") {
+                errors.push("locationField");
+                $(locationField).addClass('isError');
+            }else {
+                $(locationField).removeClass('isError');
+            }
+            
+            if ($(enquiryField).val() === "") {
+                errors.push("enquiryField");
+                $(enquiryField).addClass('isError');
+            }else {
+                $(enquiryField).removeClass('isError');
+            }
+            
+            if ($(completeField).val() !== "") {
+                errors.push("complete");
+            }
+            console.log(errors);
+           
+            if (errors.length > 0) {
+               document.getElementById("emptyInput").innerHTML = '<div class="alert alert-danger">Please Complete All Required Fields</div>';
+               
+            }else {
+    
+                if (formToSubmit[0].reportValidity()) {
+    
+                    grecaptcha.enterprise.ready(function() {
+    
+                        grecaptcha.enterprise.execute('<?php echo RECAPTCHA_ENTERPRISE_KEY; ?>', {action: 'submit'}).then(function(token) {
+    
+                            $('.gRecaptcha').val(token);
+                            formToSubmit.submit();
+    
+                        });
+                    });
+                }    
+            }
+        });
+         
+</script>
 
 <div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 5px; right: 5px; opacity: 0; cursor: pointer;"></div>
 </body>

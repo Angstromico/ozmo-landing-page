@@ -29,9 +29,18 @@
     define ("LOCATION_NAME2", "Studley");
     define ("LOCATION_NAME3", "Droitwich");
 
+    //Templates must use Enterprise Recaptcha going forward. You do not need to get V3 Site Keys anymore - use the same enterprise keys for all sites - you don't need to do anything
+    define ("RECAPTCHA_AUTH_KEY_KILE", '/home/'.CPANEL_USERNAME.'/libraries/template-sites-456308-f69eb28d0e90.json');
+    define ('RECAPTCHA_ENTERPRISE_KEY', '6LcU_RcrAAAAAEe01foDDhIthyW91_yQ8Jvy1pyH');
+    define ('RECAPTCHA_ENTERPRISE_PROJECT_ID', 'template-sites-456308');
+
+    define ("MAIL_FROM", "development@becreativegroup.co.uk");
+    define ("MAIL_PASS", "save26$1lightWhales");
+    define ("MAIL_TO", "revisions@becreativegroup.co.uk");
+
 
 // Configuration constants
-define('BASE_URL', 'https://www.ozmo-motorsport.co.uk');
+define('SITE_URL', 'https://www.ozmo-motorsport.co.uk');
 define('SITE_TITLE', 'Ozmo Motorsport - The NO1 Remap Tuning Specialists in Dorset & the South of England');
 define('META_DESCRIPTION', 'Ozmo Motorsport - We specialize in ECU remapping, ECU programming and chip tuning for almost any vehicle. We cover Dorset and the South of England. Mobile car remap.');
 define('PHONE', '01305 457750');
