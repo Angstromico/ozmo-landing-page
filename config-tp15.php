@@ -119,8 +119,8 @@ define("LATEST_POST_2_LINK", "blog/rolling-road-dyno-now-installed-bookings-avai
 define("LATEST_POST_2_DATE", "7th October 2019");
 
 // Social media links
-define("FACEBOOK_URL", "https://www.facebook.com/AutocarMotorsport/");
-define("INSTAGRAM_URL", "https://www.instagram.com/Autocarmotorsport/");
+define("FACEBOOK_URL", "https://www.facebook.com/p/James-Giles-and-Sons-Ltd-100090148819501/");
+define("INSTAGRAM_URL", "https://www.instagram.com/ejamesgiles/?hl=en");
 
 // Copyright and credits
 define("COPYRIGHT_TEXT", "© All Rights Reserved | Web design: ");
