@@ -15,7 +15,9 @@ if (!defined('SITE_URL')) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico" alt="<?php echo BUSINESS_NAME; ?> />
+  <link rel="shortcut icon" href="assets/favicon.ico" /> 
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
   <!-- Web Fonts -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin" />
