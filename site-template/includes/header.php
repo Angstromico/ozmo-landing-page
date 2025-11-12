@@ -35,6 +35,26 @@ function render_contact_topbar($contacts) {
     
     echo '</div>';
 }
+
+/**
+ * Renders the main navigation menu from a simple associative array.
+ * @param array $items The navigation items (Title => URL).
+ */
+function render_nav_menu($items) {
+    // NOTE: In a real environment, this logic should check $_SERVER['REQUEST_URI']
+    // against the $url to dynamically set the 'active' class on the current page.
+    $current_path = '/'; 
+
+    foreach ($items as $title => $url) {
+        // Simple check: if URL is '/', mark as active.
+        $isActive = ($url == $current_path || ($title == 'Home' && $current_path == '/')) ? 'active' : '';
+        
+        echo '<li class="' . htmlspecialchars($isActive) . '">';
+        echo '  <a href="' . htmlspecialchars($url) . '">' . htmlspecialchars($title) . '</a>';
+        echo '</li>';
+    }
+}
+
 ?>
 
 <body class="dark">
@@ -80,31 +100,10 @@ function render_contact_topbar($contacts) {
     <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
       <div class="container">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
-          <li><a href="pricing">Pricing</a></li>
-          <li><a href="<?php echo EXTERNAL_URL; ?>">About Us</a></li>
-          <li class="dropdown">
-            <a href="services">Services</a>
-            <ul class="dropdown-menu">
-              <li><a href="services/car-van-4x4">Car / Van / 4x4</a></li>
-              <li><a href="services/truck-hgv-lorry">Truck / HGV / Lorry</a></li>
-              <li><a href="services/tractor-agricultural">Tractor / Agricultural</a></li>
-              <li><a href="services/motorcycle-tuning">Motorcycle</a></li>
-              <li><a href="services/boat-marine">Boat / Marine</a></li>
-              <li><a href="services/bike-car-rolling-road">Bike &amp; Car Rolling Road</a></li>
-              <li><a href="services/mileage-correction">Mileage Correction</a></li>
-            </ul>
-          </li>
-          <li><a href="vehicle-statistics">Vehicle Search</a></li>
-          <li class="dropdown">
-            <a href="carbon-cleaning">Carbon Cleaning</a>
-            <ul class="dropdown-menu">
-              <li><a href="carbon-cleaning/engine-carbon-cleaning">Engine Carbon Cleaning</a></li>
-              <li><a href="carbon-cleaning/fuel-system-clean">Fuel System Clean</a></li>
-              <li><a href="carbon-cleaning/dpf-particulate-filter-clean">DPF Diesel Particulate Filter Cleaning</a></li>
-            </ul>
-          </li>
-          <li><a href="contact">Contact Us </a></li>
+          <?php
+            // Renders the links defined in NAV_ITEMS dynamically
+            render_nav_menu(NAV_ITEMS); 
+          ?>
         </ul>
       </div>
       <!--/end container-->

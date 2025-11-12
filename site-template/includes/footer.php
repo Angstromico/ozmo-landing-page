@@ -12,8 +12,8 @@ if (!defined('SITE_URL')) {
           <!-- About -->
           <div class="wow fadeInUp" style="visibility: hidden; animation-name: none">
             <div class="col-md-3 md-margin-bottom-40">
-              <img id="logo-footer" class="footer-logo img-responsive" src="upload/logo.png" alt="Ozmo Motorsport Performance Centre" width="220" />
-              We are Dorset's Number One Remap Tuning And Engine Carbon Cleaning Specialist, We have been trading the longest with the most experience, Using the best GENUINE tools in the industry. All of our tuning is fully tested , insured, guaranteed and at very competitive pricing.
+              <img id="logo-footer" class="footer-logo img-responsive" src="upload/logo.png" alt="Autocar Motorsport Performance Centre" width="220" />
+              <?php echo FOOTER_DESCRIPTION; ?>
             </div>
             <!--/col-md-3-->
             <!-- End About -->
@@ -23,8 +23,14 @@ if (!defined('SITE_URL')) {
               <div class="posts">
                 <div class="headline"><h2>Latest Posts</h2></div>
                 <ul class="list-unstyled latest-list">
-                  <li><a href="blog/fully-open-trading-for-business-during-covid-lockdown">FULLY OPEN TRADING FOR BUSINESS DURING COVID LOCKDOWN</a><small>16th February 2021</small></li>
-                  <li><a href="blog/rolling-road-dyno-now-installed-bookings-available-now">Rolling Road Dyno now installed , bookings available now</a><small>7th October 2019</small></li>
+                  <li>
+                    <a href="<?php echo LATEST_POST_1_LINK; ?>"><?php echo LATEST_POST_1_TITLE; ?></a>
+                    <small><?php echo LATEST_POST_1_DATE; ?></small>
+                  </li>
+                  <li>
+                    <a href="<?php echo LATEST_POST_2_LINK; ?>"><?php echo LATEST_POST_2_TITLE; ?></a>
+                  <small><?php echo LATEST_POST_2_DATE; ?></small>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -40,7 +46,7 @@ if (!defined('SITE_URL')) {
                 <?php echo ADDRESS_LINE4; ?><br />
                 <?php echo POSTCODE; ?><br />
                 Tel : <?php echo PHONE; ?><br />
-                Mobile : 07790 919405
+                Mobile : <?php echo FOOTER_MOBILE_PHONE; ?>
               </address>
             </div>
             <!--/col-md-3-->
@@ -50,8 +56,8 @@ if (!defined('SITE_URL')) {
             <div class="col-md-3 md-margin-bottom-40">
               <div class="headline"><h2>Connect with us</h2></div>
               <ul class="list-inline dark-social-v2">
-                <li><a href="https://www.facebook.com/OzmoMotorsport/"><i class="rounded-sm fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/ozmomotorsport/"><i class="rounded-sm fa-brands fa-instagram"></i></a></li>
+                <li><a href="<?php echo FACEBOOK_URL; ?>"><i class="rounded-sm fa-brands fa-facebook"></i></a></li>
+                <li><a href="<?php echo INSTAGRAM_URL; ?>"><i class="rounded-sm fa-brands fa-instagram"></i></a></li>
               </ul>
             </div>
             <!-- End Link List -->
@@ -107,7 +113,7 @@ if (!defined('SITE_URL')) {
 <div id="fb-customer-chat" class="fb-customerchat" page_id="634514679915858" attribution="biz_inbox"></div>
 <script>
   var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "634514679915858");
+  chatbox.setAttribute("page_id", "<?php echo FACEBOOK_PAGE_ID; ?>");
   chatbox.setAttribute("attribution", "biz_inbox");
 </script>
 <script>
@@ -131,7 +137,7 @@ if (!defined('SITE_URL')) {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'UA-160777481-1');
+  gtag('config', '<?php echo GOOGLE_ANALYTICS_ID; ?>');
 </script>
 
 <script src="https://www.google.com/recaptcha/enterprise.js?render=<?php echo RECAPTCHA_ENTERPRISE_KEY; ?>"></script>
