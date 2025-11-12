@@ -85,13 +85,13 @@
 define('SITE_URL', '');
 define('SITE_TITLE', 'Autocar Motorsport - The NO1 Remap Tuning Specialists in Dorset & the South of England');
 define('META_DESCRIPTION', 'Autocar Motorsport - We specialize in ECU remapping, ECU programming and chip tuning for almost any vehicle. We cover Dorset and the South of England. Mobile car remap.');
-define('PHONE', '01305 457750');
-define('EMAIL', 'info@autocar-motorsport.co.uk');
-define('ADDRESS_LINE1', 'Unit 5 Casterbridge Industrial Estate,');
-define('ADDRESS_LINE2', 'London Road');
-define('ADDRESS_LINE3', 'Dorchester');
-define('ADDRESS_LINE4', 'Dorset');
-define('POSTCODE', 'DT1 1PL');
+define('PHONE', '0161 711 0834');
+define('EMAIL', 'support@ecutuningexperts.co.uk');
+define('ADDRESS_LINE1', 'Suite 5 Manchester Trade Centre');
+define('ADDRESS_LINE2', 'Deansgate');
+define('ADDRESS_LINE3', 'Manchester');
+define('ADDRESS_LINE4', 'Lancashire');
+define('POSTCODE', 'M3 4EN');
 
 define ("NAV_ITEMS", [
                 "Home" => EXTERNAL_URL . "/",
@@ -106,17 +106,17 @@ define ("NAV_ITEMS", [
 define('CONTACT', EXTERNAL_URL . "/#contact");
 
 // Footer content
-define("FOOTER_DESCRIPTION", "We are Dorset's Number One Remap Tuning And Engine Carbon Cleaning Specialist, We have been trading the longest with the most experience, Using the best GENUINE tools in the industry. All of our tuning is fully tested , insured, guaranteed and at very competitive pricing.");
-define("FOOTER_MOBILE_PHONE", "07790 919405");
+define("FOOTER_DESCRIPTION", "We are a premier automotive tuning specialist delivering exceptional performance enhancement services. Our team utilizes industry-leading tools and technology to provide comprehensive ECU optimization solutions. All our tuning services undergo rigorous testing and come with quality guarantees at competitive market rates.");
+define("FOOTER_MOBILE_PHONE", "07700 919505");
 
 // Latest posts
-define("LATEST_POST_1_TITLE", "FULLY OPEN TRADING FOR BUSINESS DURING COVID LOCKDOWN");
-define("LATEST_POST_1_LINK", "blog/fully-open-trading-for-business-during-covid-lockdown");
-define("LATEST_POST_1_DATE", "16th February 2021");
+define("LATEST_POST_1_TITLE", "ADVANCED DIAGNOSTIC SYSTEMS NOW AVAILABLE");
+define("LATEST_POST_1_LINK", "blog/advanced-diagnostic-systems-now-available");
+define("LATEST_POST_1_DATE", "15th January 2024");
 
-define("LATEST_POST_2_TITLE", "Rolling Road Dyno now installed , bookings available now");
-define("LATEST_POST_2_LINK", "blog/rolling-road-dyno-now-installed-bookings-available-now");
-define("LATEST_POST_2_DATE", "7th October 2019");
+define("LATEST_POST_2_TITLE", "NEW PERFORMANCE TUNING PACKAGES LAUNCHED");
+define("LATEST_POST_2_LINK", "blog/new-performance-tuning-packages-launched");
+define("LATEST_POST_2_DATE", "28th November 2023");
 
 // Social media links
 define("FACEBOOK_URL", "https://www.facebook.com/p/James-Giles-and-Sons-Ltd-100090148819501/");
@@ -132,27 +132,27 @@ define("FACEBOOK_PAGE_ID", "634514679915858");
 define("GOOGLE_ANALYTICS_ID", "UA-160777481-1");
 
 // Slider content
-define("SLIDER_TITLE_1", "PREMIUM QUALITY");
-define("SLIDER_SUBTITLE_1", "TUNING SOLUTIONS");
-define("SLIDER_SUBTITLE_1_2", "FOR EVERY VEHICLE");
-define("SLIDER_DESCRIPTION_1", "We specialize in enhancing\nyour vehicle's performance\nand fuel efficiency.");
+define("SLIDER_TITLE_1", "ADVANCED PERFORMANCE");
+define("SLIDER_SUBTITLE_1", "TUNING TECHNOLOGY");
+define("SLIDER_SUBTITLE_1_2", "FOR OPTIMAL RESULTS");
+define("SLIDER_DESCRIPTION_1", "Professional ECU optimization\nfor maximum power output\nand improved efficiency");
 
-define("SLIDER_TITLE_2", "WE SERVICE OVER 99%");
-define("SLIDER_SUBTITLE_2", "OF VEHICLE BRANDS");
-define("SLIDER_SUBTITLE_2_2", "AND MODELS");
-define("SLIDER_DESCRIPTION_2", "From luxury BMWs to commercial\nIVECO trucks, we deliver results.");
+define("SLIDER_TITLE_2", "COMPREHENSIVE COVERAGE");
+define("SLIDER_SUBTITLE_2", "MULTI-PLATFORM SUPPORT");
+define("SLIDER_SUBTITLE_2_2", "ACROSS ALL VEHICLES");
+define("SLIDER_DESCRIPTION_2", "Advanced tuning solutions\nfor diverse vehicle platforms\nand engine types");
 
-define("SLIDER_TITLE_3", "2WD DYNAMOMETER");
-define("SLIDER_SUBTITLE_3", "FOR PRECISE");
-define("SLIDER_SUBTITLE_3_2", "PERFORMANCE TESTING");
-define("SLIDER_DESCRIPTION_3", "Accurately measure engine\nperformance with our dyno equipment!");
+define("SLIDER_TITLE_3", "PRECISION TESTING");
+define("SLIDER_SUBTITLE_3", "DYNAMIC PERFORMANCE");
+define("SLIDER_SUBTITLE_3_2", "VALIDATION SYSTEMS");
+define("SLIDER_DESCRIPTION_3", "State-of-the-art equipment\nfor accurate performance\nmeasurement and verification");
 
 // Welcome section
 define("WELCOME_TITLE", "Welcome to Autocar Motorsport");
-define("WELCOME_PARAGRAPH_1", "Autocar Motorsport is a well-established tuning company founded by Craig Osmond, known in the industry as Autocar. With more than 19 years of experience in the automotive sector and a lifelong career dedicated to the motor trade, we bring unparalleled expertise to every project. Our specialty lies in ECU recalibration, including advanced remapping and chip tuning services, for virtually any vehicle on the market today.");
-define("WELCOME_PARAGRAPH_2", "As Dorset's leading remap tuning specialist, we take pride in being the most experienced ECU tuning experts in the region. Our services extend beyond passenger cars to include VANS, MOTORHOMES, MOTORCYCLES, 4X4 VEHICLES, TRUCKS, HGVs, TRACTORS, BOATS, MARINE ENGINES, AND EVEN JET SKIS. If it features an ECU, we possess the technical knowledge and specialized tools to optimize it.");
-define("WELCOME_PARAGRAPH_3", "Our state-of-the-art performance centre in Dorchester, Dorset, is equipped with two rolling road dynamometers, enabling us to provide comprehensive testing and tuning services for all types of vehicles.");
-define("WELCOME_PARAGRAPH_4", "We invite you to explore our website and discover how we can enhance your vehicle's performance.");
+define("WELCOME_PARAGRAPH_1", "Autocar Motorsport is a premier automotive tuning company dedicated to delivering exceptional performance enhancements for all types of vehicles. With decades of combined experience in the industry, our team of certified technicians brings cutting-edge expertise to every project, ensuring optimal results and complete customer satisfaction.");
+define("WELCOME_PARAGRAPH_2", "As a leading force in vehicle performance optimization, we specialize in comprehensive ECU recalibration services that unlock your vehicle's true potential. Our advanced remapping and chip tuning solutions are tailored to meet your specific driving needs, whether you're seeking improved fuel efficiency, enhanced power output, or superior throttle response.");
+define("WELCOME_PARAGRAPH_3", "Our commitment to excellence extends beyond standard tuning services. We utilize state-of-the-art diagnostic equipment and proprietary software to deliver precise, reliable results for every vehicle we service. Each tuning solution is thoroughly tested and validated to ensure maximum performance gains while maintaining engine longevity and reliability.");
+define("WELCOME_PARAGRAPH_4", "Discover the difference that professional tuning can make. Contact us today to schedule a consultation and experience the transformative power of precision engine optimization with Autocar Motorsport.");
 
 // Vehicle statistics
 define("STATS_TITLE", "Vehicle Statistics");
