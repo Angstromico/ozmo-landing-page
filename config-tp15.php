@@ -124,9 +124,6 @@ define("INSTAGRAM_URL", "https://www.instagram.com/ejamesgiles/?hl=en");
 
 // Copyright and credits
 define("COPYRIGHT_TEXT", "© All Rights Reserved | Web design: ");
-define("WEB_DESIGNER_URL", "https://www.bensky.co.uk/tuning-websites");
-define("WEB_DESIGNER_LOGO", "https://www.bensky.co.uk/img/logo-white.svg");
-define("WEB_DESIGNER_ALT", "BENSKY webdesign for remapping companies");
 
 // Facebook Messenger
 define("FACEBOOK_PAGE_ID", "634514679915858");

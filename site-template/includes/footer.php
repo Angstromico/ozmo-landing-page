@@ -71,7 +71,7 @@ if (!defined('SITE_URL')) {
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p>© All Rights Reserved | Web design: <a href="https://www.bensky.co.uk/tuning-websites" target="_blank"><img src="https://www.bensky.co.uk/img/logo-white.svg" alt="BENSKY webdesign for remapping companies" width="60" /></a></p>
+            <p><?php echo COPYRIGHT_TEXT . ' ' . date("Y"); ?></p>
           </div>
         </div>
       </div>
