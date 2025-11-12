@@ -65,7 +65,7 @@ a:hover {
   box-shadow: 0 0 5px #ccc;
   margin-left: auto !important;
   margin-right: auto !important;
-  background: url(../img/patterns/15.png) repeat;
+  background: url(../images/patterns/15.png) repeat;
 }
 
 /*Main Styles
@@ -74,7 +74,7 @@ a:hover {
 .purchase {
   padding: 25px 0 30px;
   border-bottom: solid 1px #eee;
-  background: url(../img/patterns/breadcrumbs.png) repeat;
+  background: url(../images/patterns/breadcrumbs.png) repeat;
 }
 .purchase p {
   margin-bottom: 0;
@@ -584,7 +584,7 @@ a.thumbnail {
   padding: 40px 0;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  background: url(../img/breadcrumbs.png) repeat;
+  background: url(../images/breadcrumbs.png) repeat;
 }
 
 /*Gallery Page
@@ -791,7 +791,7 @@ ul.blog-tags a:hover i {
 
 .slider-promo-info-bg {
   padding: 25px 20px 20px;
-  background: url(../img/bg-black.png) repeat;
+  background: url(../images/bg-black.png) repeat;
 }
 
 .slider-promo-info span.big-size {
@@ -1559,7 +1559,7 @@ img.img-mouse {
 .service-info {
   position: relative;
   padding: 40px 0 50px;
-  background: url(../img/patterns/17.png) repeat;
+  background: url(../images/patterns/17.png) repeat;
 }
 
 .service-info .info-description {
@@ -1610,7 +1610,7 @@ img.img-mouse {
 ------------------------------------*/
 .testimonials-bs {
   padding: 50px 0;
-  background: url(../img/bg/16.jpg) 50% 0 repeat fixed;
+  background: url(../images/bg/16.jpg) 50% 0 repeat fixed;
 }
 
 .testimonials-bs .headline-center-v2 span.author {

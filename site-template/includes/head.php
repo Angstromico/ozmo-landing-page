@@ -15,33 +15,33 @@ if (!defined('SITE_URL')) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/favicon.ico" /> 
-  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/favicon.ico" /> 
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/favicon.ico" type="img/x-icon" />
 
   <!-- Web Fonts -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin" />
 
   <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
   <!-- CSS Header and Footer -->
-  <link rel="stylesheet" href="assets/css/headers/header-default.css" />
-  <link rel="stylesheet" href="assets/css/footers/footer-v1.css" />
+  <link rel="stylesheet" href="css/headers/header-default.css" />
+  <link rel="stylesheet" href="css/footers/footer-v1.css" />
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="assets/plugins/animate.css" />
-  <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css" />
-  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css" />
-  <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css" />
+  <link rel="stylesheet" href="plugins/animate.css" />
+  <link rel="stylesheet" href="plugins/line-icons/line-icons.css" />
+  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="plugins/parallax-slider/css/parallax-slider.css" />
+  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css" />
 
   <!-- CSS Theme -->
-  <link rel="stylesheet" href="assets/css/theme-skins/dark.css" />
-  <link rel="stylesheet" href="assets/css/theme-colors/red.css" />
+  <link rel="stylesheet" href="css/theme-skins/dark.css" />
+  <link rel="stylesheet" href="css/theme-colors/red.css" />
   <!-- CSS Customization -->
-  <link rel="stylesheet" href="assets/css/custom.css" />
+  <link rel="stylesheet" href="css/custom.css" />
   <meta name="google-site-verification" content="e_t9UURXEyLTxbspfwbjKXlDzjY597rRD-akP-38naw" />
 
   <!-- Facebook Pixel Code -->
@@ -67,8 +67,8 @@ if (!defined('SITE_URL')) {
     fbq('init', '2340207876081442');
     fbq('track', 'PageView');
   </script>
-  <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
+  <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
   <noscript>
     <img height="1" width="1" src="https://www.facebook.com/tr?id=2340207876081442&ev=PageView&noscript=1" />
   </noscript>

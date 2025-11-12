@@ -12,7 +12,7 @@ if (!defined('SITE_URL')) {
           <!-- About -->
           <div class="wow fadeInUp" style="visibility: hidden; animation-name: none">
             <div class="col-md-3 md-margin-bottom-40">
-              <img id="logo-footer" class="footer-logo img-responsive" src="assets/upload/logo.webp" alt="Autocar Motorsport Performance Centre" width="220" />
+              <img id="logo-footer" class="footer-logo img-responsive" src="upload/logo.webp" alt="Autocar Motorsport Performance Centre" width="220" />
               <?php echo FOOTER_DESCRIPTION; ?>
             </div>
             <!--/col-md-3-->
@@ -83,16 +83,16 @@ if (!defined('SITE_URL')) {
 <!--/wrapper-->
 
 <!-- JS Global Compulsory -->
-<script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="plugins/back-to-top.js"></script>
+<script type="text/javascript" src="plugins/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="plugins/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
 <!-- JS Page Level -->
-<script type="text/javascript" src="assets/js/app.js"></script>
-<script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
-<script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/plugins/owl-carousel.js"></script>
+<script type="text/javascript" src="js/plugins/parallax-slider.js"></script>
 <script type="text/javascript">
   jQuery(document).ready(function () {
     App.init();

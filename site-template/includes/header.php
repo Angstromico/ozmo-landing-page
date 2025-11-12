@@ -12,7 +12,7 @@ if (!defined('SITE_URL')) {
     <div class="container">
       <!-- Logo -->
       <a class="logo" href="/">
-        <img src="assets/upload/logo.webp" width="275" alt="<?php echo BUSINESS_NAME; ?>" />
+        <img src="upload/logo.webp" width="275" alt="<?php echo BUSINESS_NAME; ?>" />
       </a>
       <!-- End Logo -->
 
