@@ -7,7 +7,7 @@
     define ('CPANEL_USERNAME', 'fba27102023a');
 
 //THE EXTERNAL_URL KEY VALUE PAIR MUST BE INCLUDED
-    define ("EXTERNAL_URL", "https://www.jamesgilesandsonsltd.co.uk");
+    define ("EXTERNAL_URL", "https://www.ozmo-motorsport.co.uk");
 
 //THE BUSINESS_NAME KEY VALUE PAIR MUST BE INCLUDED
     define ("BUSINESS_NAME","Cars Shop");
@@ -95,15 +95,12 @@ define('POSTCODE', 'M3 4EN');
 
 define ("NAV_ITEMS", [
                 "Home" => EXTERNAL_URL . "/",
-                "About Us" => EXTERNAL_URL . "/#about",
-                "Costs" => EXTERNAL_URL . "/funeral-costs",
-                "Help & Advice" => EXTERNAL_URL . "/help-and-advice",
-                "Funeral Notices" => EXTERNAL_URL . "/funeral-notices",
-                "Blog" => EXTERNAL_URL . "/blog",
-                "Contact Us" => EXTERNAL_URL . "/#contact"
+                "About Us" => EXTERNAL_URL . "/about-us",
+                "Pricing" => EXTERNAL_URL . "/pricing",
+                "Contact Us" => EXTERNAL_URL . "/contact",
             ]);
 
-define('CONTACT', EXTERNAL_URL . "/#contact");
+define('CONTACT', EXTERNAL_URL . "/contact");
 
 // Footer content
 define("FOOTER_DESCRIPTION", "We are a premier automotive tuning specialist delivering exceptional performance enhancement services. Our team utilizes industry-leading tools and technology to provide comprehensive ECU optimization solutions. All our tuning services undergo rigorous testing and come with quality guarantees at competitive market rates.");
