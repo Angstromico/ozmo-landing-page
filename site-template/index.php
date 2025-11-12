@@ -15,7 +15,7 @@ include __DIR__ . '/includes/header.php';
       </h2>
       <p><i><?php echo nl2br(SLIDER_DESCRIPTION_1); ?></i></p>
       <div class="da-img">
-        <img class="img-responsive" src="plugins/parallax-slider/img/1.png" alt="" />
+        <img class="img-responsive" src="images/parallax-slider/img/1.png" alt="" />
       </div>
     </div>
 
@@ -27,7 +27,7 @@ include __DIR__ . '/includes/header.php';
       </h2>
       <p><i><?php echo nl2br(SLIDER_DESCRIPTION_2); ?></i></p>
       <div class="da-img">
-        <img class="img-responsive" src="plugins/parallax-slider/img/2.png" alt="" />
+        <img class="img-responsive" src="images/parallax-slider/img/2.png" alt="" />
       </div>
     </div>
 
@@ -39,7 +39,7 @@ include __DIR__ . '/includes/header.php';
       </h2>
       <p><i><?php echo nl2br(SLIDER_DESCRIPTION_3); ?></i></p>
       <div class="da-img">
-        <img src="plugins/parallax-slider/img/4.png" alt="image01" />
+        <img src="images/parallax-slider/img/4.png" alt="image01" />
       </div>
     </div>
 

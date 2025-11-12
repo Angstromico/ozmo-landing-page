@@ -83,12 +83,12 @@ if (!defined('SITE_URL')) {
 <!--/wrapper-->
 
 <!-- JS Global Compulsory -->
-<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->
-<script type="text/javascript" src="plugins/back-to-top.js"></script>
-<script type="text/javascript" src="plugins/parallax-slider/js/modernizr.js"></script>
-<script type="text/javascript" src="plugins/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="plugins/owl-carousel/owl.carousel.js"></script>
+<script type="text/javascript" src="js/back-to-top.js"></script>
+<script type="text/javascript" src="js/parallax-slider/js/modernizr.js"></script>
+<script type="text/javascript" src="js/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="js/owl-carousel/owl.carousel.js"></script>
 <!-- JS Page Level -->
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/plugins/owl-carousel.js"></script>

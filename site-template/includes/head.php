@@ -23,7 +23,7 @@ if (!defined('SITE_URL')) {
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin" />
 
   <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- CSS Header and Footer -->
@@ -31,11 +31,11 @@ if (!defined('SITE_URL')) {
   <link rel="stylesheet" href="css/footers/footer-v1.css" />
 
   <!-- CSS Implementing Plugins -->
-  <link rel="stylesheet" href="plugins/animate.css" />
-  <link rel="stylesheet" href="plugins/line-icons/line-icons.css" />
-  <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="plugins/parallax-slider/css/parallax-slider.css" />
-  <link rel="stylesheet" href="plugins/owl-carousel/owl.carousel.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/line-icons/line-icons.css" />
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/parallax-slider/css/parallax-slider.css" />
+  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css" />
 
   <!-- CSS Theme -->
   <link rel="stylesheet" href="css/theme-skins/dark.css" />
