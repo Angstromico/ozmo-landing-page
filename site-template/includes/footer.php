@@ -12,7 +12,7 @@ if (!defined('SITE_URL')) {
           <!-- About -->
           <div class="wow fadeInUp" style="visibility: hidden; animation-name: none">
             <div class="col-md-3 md-margin-bottom-40">
-              <img id="logo-footer" class="footer-logo img-responsive" src="upload/logo.png" alt="Autocar Motorsport Performance Centre" width="220" />
+              <img id="logo-footer" class="footer-logo img-responsive" src="assets/upload/logo.webp" alt="Autocar Motorsport Performance Centre" width="220" />
               <?php echo FOOTER_DESCRIPTION; ?>
             </div>
             <!--/col-md-3-->
@@ -56,8 +56,8 @@ if (!defined('SITE_URL')) {
             <div class="col-md-3 md-margin-bottom-40">
               <div class="headline"><h2>Connect with us</h2></div>
               <ul class="list-inline dark-social-v2">
-                <li><a href="<?php echo FACEBOOK_URL; ?>"><i class="rounded-sm fa-brands fa-facebook"></i></a></li>
-                <li><a href="<?php echo INSTAGRAM_URL; ?>"><i class="rounded-sm fa-brands fa-instagram"></i></a></li>
+                <li><a href="<?php echo FACEBOOK_URL; ?>"><i class="rounded-sm fa fa-facebook"></i></a></li>
+                <li><a href="<?php echo INSTAGRAM_URL; ?>"><i class="rounded-sm fa fa-instagram"></i></a></li>
               </ul>
             </div>
             <!-- End Link List -->
@@ -83,16 +83,12 @@ if (!defined('SITE_URL')) {
 <!--/wrapper-->
 
 <!-- JS Global Compulsory -->
-<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
 <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <!-- JS Implementing Plugins -->
 <script type="text/javascript" src="assets/plugins/back-to-top.js"></script>
 <script type="text/javascript" src="assets/plugins/parallax-slider/js/modernizr.js"></script>
 <script type="text/javascript" src="assets/plugins/parallax-slider/js/jquery.cslider.js"></script>
-<script type="text/javascript" src="assets/plugins/owl-carousel/owl-carousel/owl.carousel.js"></script>
-<!-- JS Customization -->
-<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/plugins/owl-carousel/owl.carousel.js"></script>
 <!-- JS Page Level -->
 <script type="text/javascript" src="assets/js/app.js"></script>
 <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>

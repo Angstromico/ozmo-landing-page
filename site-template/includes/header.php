@@ -64,7 +64,7 @@ function render_nav_menu($items) {
     <div class="container">
       <!-- Logo -->
       <a class="logo" href="/">
-        <img src="upload/logo.png" width="275" alt="<?php echo BUSINESS_NAME; ?>" />
+        <img src="assets/upload/logo.webp" width="275" alt="<?php echo BUSINESS_NAME; ?>" />
       </a>
       <!-- End Logo -->
 

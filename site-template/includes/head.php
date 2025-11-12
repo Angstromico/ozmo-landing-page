@@ -31,10 +31,9 @@ if (!defined('SITE_URL')) {
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="assets/plugins/animate.css" />
   <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css" />
-  <!-- <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" /> -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" />
   <link rel="stylesheet" href="assets/plugins/parallax-slider/css/parallax-slider.css" />
-  <link rel="stylesheet" href="assets/plugins/owl-carousel/owl-carousel/owl.carousel.css" />
+  <link rel="stylesheet" href="assets/plugins/owl-carousel/owl.carousel.css" />
 
   <!-- CSS Theme -->
   <link rel="stylesheet" href="assets/css/theme-skins/dark.css" />
@@ -44,8 +43,8 @@ if (!defined('SITE_URL')) {
   <meta name="google-site-verification" content="e_t9UURXEyLTxbspfwbjKXlDzjY597rRD-akP-38naw" />
 
   <!-- Facebook Pixel Code -->
-  <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>
-  <script async src="https://connect.facebook.net/en_US/fbevents.js"></script>
+  <!-- <script id="facebook-jssdk" src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>
+  <script async src="https://connect.facebook.net/en_US/fbevents.js"></script> -->
   <script>
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
@@ -66,6 +65,8 @@ if (!defined('SITE_URL')) {
     fbq('init', '2340207876081442');
     fbq('track', 'PageView');
   </script>
+  <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>
   <noscript>
     <img height="1" width="1" src="https://www.facebook.com/tr?id=2340207876081442&ev=PageView&noscript=1" />
   </noscript>

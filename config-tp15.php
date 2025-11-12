@@ -82,7 +82,7 @@
 //SITE SPECIFIC DETAILS - must not be spun by AI but is unique to the individual site rather than common to all sites created by the template - some need to be here because they utilise Site Specific CONSTANTS
 //******************************************************// 
 
-define('SITE_URL', 'https://www.ozmo-motorsport.co.uk');
+define('SITE_URL', '');
 define('SITE_TITLE', 'Autocar Motorsport - The NO1 Remap Tuning Specialists in Dorset & the South of England');
 define('META_DESCRIPTION', 'Autocar Motorsport - We specialize in ECU remapping, ECU programming and chip tuning for almost any vehicle. We cover Dorset and the South of England. Mobile car remap.');
 define('PHONE', '01305 457750');
