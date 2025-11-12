@@ -161,90 +161,146 @@ function render_testimonials($testimonials) {
       </div>
     </div>
 
-<!-- Latest Shots -->
+<!-- 3D Rotating Card Banner -->
 <div class="col-md-5 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight">
-  <div class="headline"><?php echo STATS_TITLE; ?></div>
-
-  <div class="vehicle-stats-widget" style="background: #1a1a1a; border-radius: 12px; padding: 20px; color: white; font-family: 'Segoe UI', sans-serif; box-shadow: 0 10px 30px rgba(233, 36, 45, 0.3);">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; text-align: center;">
-      
-      <div class="stat-item">
-        <div class="stat-number" data-target="<?php echo STATS_TOTAL_VEHICLES; ?>">0</div>
-        <div class="stat-label">Total Vehicles</div>
+  <div class="headline"><h2>Special Offer</h2></div>
+  
+  <div class="card-3d-container">
+    <div class="card-3d">
+      <div class="card-front">
+        <div class="card-content">
+          <div class="card-icon">
+            <i class="fa fa-bolt" style="color: #e9242d; font-size: 3rem;"></i>
+          </div>
+          <h3>Performance Tuning</h3>
+          <p class="card-price">From £299</p>
+          <p class="card-desc">+30% HP & Torque<br>Improved Throttle Response<br>Better Fuel Economy</p>
+          <div class="card-badge">Limited Time</div>
+        </div>
       </div>
-      
-      <div class="stat-item">
-        <div class="stat-number" data-target="<?php echo STATS_ONLINE_NOW; ?>">0</div>
-        <div class="stat-label text-success">Online Now</div>
+      <div class="card-back">
+        <div class="card-content">
+          <div class="card-icon">
+            <i class="fa fa-calendar-check-o" style="color: #e9242d; font-size: 3rem;"></i>
+          </div>
+          <h3>Book Now</h3>
+          <p class="card-desc">Free Diagnostic Check<br>12 Month Warranty<br>Mobile Service Available</p>
+          <a href="<?php echo EXTERNAL_URL; ?>/contact" class="btn-u btn-u-red">Get Quote</a>
+        </div>
       </div>
-      
-      <div class="stat-item">
-        <div class="stat-number" data-target="<?php echo STATS_OFFLINE; ?>">0</div>
-        <div class="stat-label text-danger">Offline</div>
-      </div>
-      
-      <div class="stat-item">
-        <div class="stat-number" data-target="<?php echo STATS_UPTIME; ?>">0</div>
-        <div class="stat-label">Uptime %</div>
-      </div>
-    </div>
-
-    <div style="margin-top: 20px; text-align: center; font-size: 14px; opacity: 0.8;">
-      <span style="color: #e9242d;">●</span> <?php echo STATS_LIVE_TEXT; ?>
     </div>
   </div>
+</div>
 
-  <style>
-    .stat-number {
-      font-size: 2.2rem;
-      font-weight: bold;
-      color: #e9242d;
-      margin-bottom: 5px;
-    }
-    .stat-label {
-      font-size: 0.9rem;
-      opacity: 0.9;
-      letter-spacing: 0.5px;
-    }
-    .text-success { color: #4ade80 !important; }
-    .text-danger { color: #f87171 !important; }
-  </style>
+<style>
+.card-3d-container {
+  perspective: 1500px;
+  height: 350px;
+}
 
-  <script>
-    const counters = document.querySelectorAll('.stat-number');
-    const speed = 200;
+.card-3d {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+  cursor: pointer;
+}
 
-    counters.forEach(counter => {
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const inc = target / speed;
+.card-3d:hover {
+  transform: rotateY(180deg);
+}
 
-        if (count < target) {
-          counter.innerText = target % 1 === 0 
-            ? Math.ceil(count + inc)
-            : (count + inc).toFixed(1);
-          setTimeout(updateCount, 15);
-        } else {
-          counter.innerText = target % 1 === 0 ? target : target.toFixed(1);
-        }
-      };
-      updateCount();
-    });
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-    const widget = document.querySelector('.vehicle-stats-widget');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          counters.forEach(c => c.innerText = '0');
-          counters.forEach(updateCount);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    
-    observer.observe(widget);
-  </script>
+.card-front {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: white;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #e9242d 0%, #c41e25 100%);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  text-align: center;
+  padding: 30px;
+  width: 100%;
+}
+
+.card-icon {
+  margin-bottom: 20px;
+}
+
+.card-3d h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.card-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e9242d;
+  margin-bottom: 15px;
+}
+
+.card-front .card-price {
+  color: #e9242d;
+}
+
+.card-back .card-price {
+  color: white;
+}
+
+.card-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.card-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e9242d;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn-u-red {
+  background: #1a1a1a;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-u-red:hover {
+  background: white;
+  color: #e9242d;
+  transform: translateY(-2px);
+}
+</style>
 </div>
 </div>
   <!-- End Info Blokcs -->
