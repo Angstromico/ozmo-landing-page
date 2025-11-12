@@ -67,8 +67,8 @@ if (!defined('SITE_URL')) {
     fbq('init', '2340207876081442');
     fbq('track', 'PageView');
   </script>
-  <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
-  <script type="text/javascript" src="plugins/jquery/jquery-migrate.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-migrate.min.js"></script>
   <noscript>
     <img height="1" width="1" src="https://www.facebook.com/tr?id=2340207876081442&ev=PageView&noscript=1" />
   </noscript>

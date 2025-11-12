@@ -13,13 +13,13 @@
     define ("BUSINESS_NAME","Cars Shop");
 
  // They have 3 emails and 3 numbers for different locations
-    define ("PHONE_NUMBER1","01527 872318");
-    define ("PHONE_NUMBER2","01527 852213");
-    define ("PHONE_NUMBER3","01905 783188");
+    define ("PHONE_NUMBER1","01305 457750");
+   //  define ("PHONE_NUMBER2","01527 852213");
+   //  define ("PHONE_NUMBER3","01905 783188");
 
     define ("EMAIL_ADDRESS1", "bromsgrove@jamesgilesandsonsltd.co.uk");
-    define ("EMAIL_ADDRESS2", "studley@jamesgilesandsonsltd.co.uk");
-    define ("EMAIL_ADDRESS3", "droitwich@jamesgilesandsonsltd.co.uk");
+   //  define ("EMAIL_ADDRESS2", "studley@jamesgilesandsonsltd.co.uk");
+   //  define ("EMAIL_ADDRESS3", "droitwich@jamesgilesandsonsltd.co.uk");
 
     define ("MAP_LINK1", "https://www.google.com/maps/place/James+Giles+%26+Sons+Ltd/@52.3389587,-2.0575041,18z/data=!3m1!4b1!4m6!3m5!1s0x4870949d97011df9:0x2092054d8c580ec2!8m2!3d52.3389587!4d-2.0575041!16s%2Fg%2F1vs5w4d7?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D");
     define ("MAP_LINK2", "https://www.google.com/maps/place/James+Giles+%26+Sons+Ltd/@52.272801,-1.8966862,17z/data=!3m1!4b1!4m6!3m5!1s0x4870c168b8dd49df:0xed956e3a1b961897!8m2!3d52.272801!4d-1.8966862!16s%2Fg%2F11ggtgv5yx?entry=ttu&g_ep=EgoyMDI1MTAxNC4wIKXMDSoASAFQAw%3D%3D");

@@ -21,8 +21,8 @@ if (!defined('SITE_URL')) {
         <?php
         $contacts = [
           ['phone' => PHONE_NUMBER1, 'email' => EMAIL_ADDRESS1],
-          ['phone' => PHONE_NUMBER2, 'email' => EMAIL_ADDRESS2],
-          ['phone' => PHONE_NUMBER3, 'email' => EMAIL_ADDRESS3]
+          // ['phone' => PHONE_NUMBER2, 'email' => EMAIL_ADDRESS2],
+          // ['phone' => PHONE_NUMBER3, 'email' => EMAIL_ADDRESS3]
         ];
 
         foreach ($contacts as $contact):
@@ -31,7 +31,7 @@ if (!defined('SITE_URL')) {
         ?>
           <ul class="loginbar pull-right">
             <?php if ($phone): ?>
-              <li style="font-size: 9px;">
+              <li>
                 <i class="fa fa-phone highlight-color"></i>
                 <a href="tel:<?= htmlspecialchars($phone) ?>"><?= htmlspecialchars($phone) ?></a>
               </li>
@@ -42,9 +42,9 @@ if (!defined('SITE_URL')) {
             <?php endif; ?>
 
             <?php if ($email): ?>
-              <li class="hidden-xs" style="font-size: 9px;">
+              <li class="hidden-xs">
                 <i class="fa fa-envelope highlight-color"></i>
-                <a href="mailto:<?= htmlspecialchars($email) ?>" style="font-size: 9px;">
+                <a href="mailto:<?= htmlspecialchars($email) ?>">
                   <?= htmlspecialchars($email) ?>
                 </a>
               </li>
