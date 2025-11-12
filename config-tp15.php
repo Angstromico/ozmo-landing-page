@@ -17,7 +17,7 @@
    //  define ("PHONE_NUMBER2","01527 852213");
    //  define ("PHONE_NUMBER3","01905 783188");
 
-    define ("EMAIL_ADDRESS1", "bromsgrove@jamesgilesandsonsltd.co.uk");
+    define ("EMAIL_ADDRESS1", "info@ozmo-motorsport.co.uk");
    //  define ("EMAIL_ADDRESS2", "studley@jamesgilesandsonsltd.co.uk");
    //  define ("EMAIL_ADDRESS3", "droitwich@jamesgilesandsonsltd.co.uk");
 
