@@ -38,6 +38,45 @@
     define ("MAIL_PASS", "save26$1lightWhales");
     define ("MAIL_TO", "revisions@becreativegroup.co.uk");
 
+    // Testimonials array with fake happy car buyers
+    define("TESTIMONIALS", [
+     [
+        "name" => "Sarah Johnson",
+        "location" => "Birmingham",
+        "rating" => 5,
+        "text" => "Absolutely fantastic service from James Giles & Sons! Found my perfect family car at the Bromsgrove branch. The team was so helpful and made the whole process stress-free. Highly recommended!",
+        "car_purchased" => "2023 Volkswagen Tiguan"
+     ],
+     [
+        "name" => "Michael Thompson",
+        "location" => "Redditch",
+        "rating" => 5,
+        "text" => "Outstanding experience at the Studley location. They went above and beyond to find me my dream Audi A4. The after-sales support has been exceptional too. True professionals!",
+        "car_purchased" => "2022 Audi A4 Sport"
+     ],
+     [
+        "name" => "Emma and David Wilson",
+        "location" => "Worcester",
+        "rating" => 5,
+        "text" => "We purchased our first family car from the Droitwich branch and couldn't be happier. The staff were patient, knowledgeable, and never pushy. Found us exactly what we needed within our budget.",
+        "car_purchased" => "2021 Ford Focus"
+     ],
+     [
+        "name" => "Robert Chen",
+        "location" => "Kidderminster",
+        "rating" => 4,
+        "text" => "Great selection of quality used cars at competitive prices. The Bromsgrove team helped me get a fantastic deal on a nearly new BMW. Smooth financing process and friendly staff.",
+        "car_purchased" => "2022 BMW 3 Series"
+     ],
+     [
+        "name" => "Lisa Patterson",
+        "location" => "Alcester",
+        "rating" => 5,
+        "text" => "After visiting several dealerships, James Giles & Sons stood out for their honesty and transparency. The car I bought from Studley has been perfect, and the warranty gives me peace of mind.",
+        "car_purchased" => "2020 Mercedes-Benz A-Class"
+    ]
+   ]);
+
 //----SPLIT HERE (DO NOT REMOVE THIS LINE)    
 //******************************************************//    
 //SITE SPECIFIC DETAILS - must not be spun by AI but is unique to the individual site rather than common to all sites created by the template - some need to be here because they utilise Site Specific CONSTANTS

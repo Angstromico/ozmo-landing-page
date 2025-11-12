@@ -27,6 +27,56 @@ function render_locations($locations) {
     echo '</div>';
 }
 
+function render_star_rating($rating) {
+    $stars = '';
+    // Use the fa-star for full stars and fa-star-o for empty
+    for ($i = 0; $i < 5; $i++) {
+        if ($i < $rating) {
+            // Full star (using gold/yellow for visibility)
+            $stars .= '<i class="fa fa-star" style="color: #f7b731;"></i>'; 
+        } else {
+            // Empty star
+            $stars .= '<i class="fa fa-star-o" style="color: #ccc;"></i>'; 
+        }
+    }
+    return $stars;
+}
+
+function render_testimonials($testimonials) {
+    // We use owl-ts-v1 (Testimonials v1) for single item slides as defined in the JS init snippet
+    echo '<div class="owl-ts-v1 owl-carousel owl-theme">'; 
+
+    foreach ($testimonials as $testimonial) {
+        $name = htmlspecialchars($testimonial['name']);
+        $location = htmlspecialchars($testimonial['location']);
+        $text = htmlspecialchars($testimonial['text']);
+        $car = htmlspecialchars($testimonial['car_purchased']);
+        $rating = (int)($testimonial['rating'] ?? 5);
+        $stars = render_star_rating($rating);
+
+        // Individual testimonial slide structure
+        echo '<div class="item">';
+        echo '  <div class="testimonial-box" style="text-align: center; background: #fff; padding: 30px 40px; border-radius: 8px; border: 1px solid #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">';
+        
+        // Rating Stars
+        echo '    <div class="testimonial-rating margin-bottom-10" style="font-size: 1.2rem;">' . $stars . '</div>';
+        
+        // Quote Text
+        echo '    <p style="font-style: italic; font-size: 1.1em; line-height: 1.6; color: #555; margin-bottom: 25px;">"' . $text . '"</p>';
+        
+        // Customer Info
+        echo '    <div class="testimonial-author">';
+        echo '      <strong style="display: block; font-size: 1.2em; color: #e9242d;">' . $name . '</strong>';
+        echo '      <span style="font-size: 0.9em; color: #888;">' . $location . ' | Purchased: ' . $car . '</span>';
+        echo '    </div>';
+        
+        echo '  </div>';
+        echo '</div>';
+    }
+
+    echo '</div>'; // close owl-ts-v1
+}
+
 ?>
 
 <!--=== Slider ===-->
@@ -220,121 +270,18 @@ function render_locations($locations) {
   <!-- End Info Blokcs -->
 
   <!-- Owl Clients v1 -->
-  <div class="headline"><h2>Manufacturers Supported</h2></div>
-  <div class="owl-clients-v1 margin-bottom-30 owl-carousel owl-theme" style="opacity: 1; display: block">
-    <div class="owl-wrapper-outer">
-      <div class="owl-wrapper" style="width: 14472px; left: 0px; display: block; transition: 800ms; transform: translate3d(-1474px, 0px, 0px);">
-         <img src="assets/img/manufacturers/1.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/2.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/3.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/4.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/5.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/6.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/7.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/8.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/9.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/10.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/11.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/12.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/13.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/14.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/15.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/16.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/17.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/18.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/19.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/20.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/21.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/22.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/23.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/24.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/25.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/26.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/27.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/28.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/29.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/30.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/31.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/32.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/33.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/34.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/35.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/36.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/37.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/38.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/40.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/41.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/42.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/43.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/44.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/45.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/46.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/47.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/48.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/49.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/50.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/51.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/52.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/53.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/54.png" alt="">
-            </div></div><div class="owl-item" style="width: 163px;"><div class="item">
-                <img src="assets/img/manufacturers/55.png" alt="">
-      </div>
-    </div>
-
-    <script type="text/javascript" src="assets/js/app.js"></script>
+  <div class="headline"><h2>Testimonials</h2></div>
+  <div class="margin-bottom-30">
+    <?php
+        // Renders the testimonials using the owl-ts-v1 class for single-item sliding.
+        render_testimonials(TESTIMONIALS); 
+    ?>
+  </div>
+  <!-- End Owl Clients v1 -->
+</div>
+<!--/container-->
+</div>
+<script type="text/javascript" src="assets/js/app.js"></script>
 <script type="text/javascript" src="assets/js/plugins/owl-carousel.js"></script>
 <script type="text/javascript" src="assets/js/plugins/parallax-slider.js"></script>
 <script type="text/javascript">
@@ -344,24 +291,6 @@ function render_locations($locations) {
     ParallaxSlider.initParallaxSlider();
   });
 </script>
-
-    <div class="owl-controls clickable">
-      <div class="owl-pagination">
-        <div class="owl-page"><span class=""></span></div>
-        <div class="owl-page active"><span class=""></span></div>
-        <div class="owl-page"><span class=""></span></div>
-        <div class="owl-page"><span class=""></span></div>
-        <div class="owl-page"><span class=""></span></div>
-        <div class="owl-page"><span class=""></span></div>
-        <div class="owl-page"><span class=""></span></div>
-        <div class="owl-page"><span class=""></span></div>
-      </div>
-    </div>
-  </div>
-  <!-- End Owl Clients v1 -->
-</div>
-<!--/container-->
-</div>
 <!-- End Content Part -->
 
 <!--=== Purchase Block ===-->
