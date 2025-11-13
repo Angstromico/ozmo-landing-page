@@ -93,12 +93,43 @@ define('ADDRESS_LINE3', 'Manchester');
 define('ADDRESS_LINE4', 'Lancashire');
 define('POSTCODE', 'M3 4EN');
 
-define ("NAV_ITEMS", [
-                "Home" => EXTERNAL_URL . "/",
-                "About Us" => EXTERNAL_URL . "/about-us",
-                "Pricing" => EXTERNAL_URL . "/pricing",
-                "Contact Us" => EXTERNAL_URL . "/contact",
-            ]);
+define("NAV_ITEMS", [
+  "Home" => [
+    "url" => EXTERNAL_URL . "/"
+  ],
+  "Pricing" => [
+    "url" => EXTERNAL_URL . "/pricing"
+  ],
+  "About Us" => [
+    "url" => EXTERNAL_URL . "/about-us"
+  ],
+  "Services" => [
+    "url" => EXTERNAL_URL . "/services",
+    "children" => [
+      "Car / Van / 4x4" => EXTERNAL_URL . "/services/car-van-4x4",
+      "Truck / HGV / Lorry" => EXTERNAL_URL . "/services/truck-hgv-lorry",
+      "Tractor / Agricultural" => EXTERNAL_URL . "/services/tractor-agricultural",
+      "Motorcycle" => EXTERNAL_URL . "/services/motorcycle-tuning",
+      "Boat / Marine" => EXTERNAL_URL . "/services/boat-marine",
+      "Bike & Car Rolling Road" => EXTERNAL_URL . "/services/bike-car-rolling-road",
+      "Mileage Correction" => EXTERNAL_URL . "/services/mileage-correction"
+    ]
+  ],
+  "Vehicle Search" => [
+    "url" => EXTERNAL_URL . "/vehicle-statistics"
+  ],
+  "Carbon Cleaning" => [
+    "url" => EXTERNAL_URL . "/carbon-cleaning",
+    "children" => [
+      "Engine Carbon Cleaning" => EXTERNAL_URL . "/carbon-cleaning/engine-carbon-cleaning",
+      "Fuel System Clean" => EXTERNAL_URL . "/carbon-cleaning/fuel-system-clean",
+      "DPF Diesel Particulate Filter Cleaning" => EXTERNAL_URL . "/carbon-cleaning/dpf-particulate-filter-clean"
+    ]
+  ],
+  "Contact Us" => [
+    "url" => EXTERNAL_URL . "/contact"
+  ]
+]);
 
 define('CONTACT', EXTERNAL_URL . "/contact");
 

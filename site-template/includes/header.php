@@ -67,16 +67,28 @@ if (!defined('SITE_URL')) {
     <div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
       <div class="container">
         <ul class="nav navbar-nav">
-          <?php
-          $current_path = '/';
-          foreach (NAV_ITEMS as $title => $url):
-            $isActive = ($url == $current_path || ($title == 'Home' && $current_path == '/')) ? 'active' : '';
-          ?>
-            <li class="<?= htmlspecialchars($isActive) ?>">
-              <a href="<?= htmlspecialchars($url) ?>"><?= htmlspecialchars($title) ?></a>
-            </li>
+  <?php
+  $current_path = '/';
+
+  foreach (NAV_ITEMS as $title => $data):
+    $url = $data['url'] ?? '#';
+    $isActive = ($url == $current_path || ($title == 'Home' && $current_path == '/')) ? 'active' : '';
+    $hasChildren = !empty($data['children']);
+  ?>
+    <li class="<?= $isActive ?><?= $hasChildren ? ' dropdown' : '' ?>">
+      <a href="<?= htmlspecialchars($url) ?>"><?= htmlspecialchars($title) ?></a>
+
+      <?php if ($hasChildren): ?>
+        <ul class="dropdown-menu">
+          <?php foreach ($data['children'] as $childTitle => $childUrl): ?>
+            <li><a href="<?= htmlspecialchars($childUrl) ?>"><?= htmlspecialchars($childTitle) ?></a></li>
           <?php endforeach; ?>
         </ul>
+      <?php endif; ?>
+    </li>
+  <?php endforeach; ?>
+</ul>
+
       </div>
     </div>
     <!--/navbar-collapse-->
