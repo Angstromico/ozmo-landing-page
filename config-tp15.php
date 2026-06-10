@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', 0);
  //******************************************************// 
 //BUSINESS DETAILS - These details must not be spun but will always be common to all sites created from this template
 //******************************************************// 
