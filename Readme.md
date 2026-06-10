@@ -21,6 +21,15 @@ A clean, responsive landing page template based on the [Ozmo MOTORSPORT](https:/
 
 ## Getting Started
 
+### Docker Setup (Recommended)
+1. Ensure you have [Docker](https://www.docker.com/) and [Docker Compose](https://docs.docker.com/compose/) installed.
+2. From the root directory, run:
+   ```bash
+   docker-compose up --build
+   ```
+3. Access the site at `http://localhost:8060`.
+
+### Manual Setup
 1. **Requirements:**
    - A PHP-enabled web server (e.g., Apache, Nginx, XAMPP, MAMP).
    - Ensure the server is pointing to the `site-template/` directory as the document root.
